@@ -7,32 +7,32 @@ const catalogSections = [
     {
         title: "600 x 1200 GVT",
         items: [
-            { name: "Endless Glossy (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
-            { name: "Matt Finish (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
-            { name: "Carving Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" }
+            { name: "Endless Glossy (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
+            { name: "Matt Finish (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
+            { name: "Carving Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
         ]
     },
     {
         title: "600 x 1200",
         items: [
-            { name: "3D Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
-            { name: "Wood Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
-            { name: "Colorado Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
-            { name: "Double Charge (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
-            { name: "Gold Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" }
+            { name: "3D Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
+            { name: "Wood Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
+            { name: "Colorado Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
+            { name: "Double Charge (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
+            { name: "Gold Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
         ]
     },
     {
         title: "2 x 2 Parking",
         items: [
-            { name: "2X2 Plain Series", file: "#INSERT_DRIVE_LINK_HERE" },
-            { name: "2X2 Punch Vol-1", file: "#INSERT_DRIVE_LINK_HERE" }
+            { name: "2X2 Plain Series", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
+            { name: "2X2 Punch Vol-1", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
         ]
     },
     {
         title: "Sanitary Wares",
         items: [
-            { name: "Sanitary Wares Collection", file: "#INSERT_DRIVE_LINK_HERE" }
+            { name: "Sanitary Wares Collection", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
         ]
     },
 ];
