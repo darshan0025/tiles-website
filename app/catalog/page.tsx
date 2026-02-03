@@ -7,32 +7,32 @@ const catalogSections = [
     {
         title: "600 x 1200 GVT",
         items: [
-            { name: "Endless Glossy (600x1200)", file: "/600X1200 GVT/Endless Glossy - 600 x 1200 mm  WO Logo.pdf" },
-            { name: "Matt Finish (600x1200)", file: "/600X1200 GVT/Matt 600X1200mm WO Logo.pdf" },
-            { name: "Carving Series (600x1200)", file: "/600X1200 GVT/Carving - 600 x1200MM WO Logo.pdf" }
+            { name: "Endless Glossy (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
+            { name: "Matt Finish (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
+            { name: "Carving Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" }
         ]
     },
     {
         title: "600 x 1200",
         items: [
-            { name: "3D Series (600x1200)", file: "/600X1200 GVT/3D 600x1200mm WO Logo.pdf" },
-            { name: "Wood Series (600x1200)", file: "/600X1200 GVT/Wood Series - 600x1200mm WO Logo.pdf" },
-            { name: "Colorado Series (600x1200)", file: "/600X1200 GVT/Colorado 600x1200mm WO Logo.pdf" },
-            { name: "Double Charge (600x1200)", file: "/600X1200 GVT/Double Charge_600x1200mm WO Logo.pdf" },
-            { name: "Gold Series (600x1200)", file: "/600X1200 GVT/GOLD 2x4.pdf" }
+            { name: "3D Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
+            { name: "Wood Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
+            { name: "Colorado Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
+            { name: "Double Charge (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" },
+            { name: "Gold Series (600x1200)", file: "#INSERT_DRIVE_LINK_HERE" }
         ]
     },
     {
         title: "2 x 2 Parking",
         items: [
-            { name: "2X2 Plain Series", file: "/2X2 Parking/2X2 PLAIN_SERIES.pdf" },
-            { name: "2X2 Punch Vol-1", file: "/2X2 Parking/2X2 PUNCH VOL-1.pdf" }
+            { name: "2X2 Plain Series", file: "#INSERT_DRIVE_LINK_HERE" },
+            { name: "2X2 Punch Vol-1", file: "#INSERT_DRIVE_LINK_HERE" }
         ]
     },
     {
         title: "Sanitary Wares",
         items: [
-            { name: "Sanitary Wares Collection", file: "/Sanitary wares/Sanitary Wares.pdf" }
+            { name: "Sanitary Wares Collection", file: "#INSERT_DRIVE_LINK_HERE" }
         ]
     },
 ];
@@ -79,7 +79,7 @@ export default function CatalogPage() {
                                             asChild
                                             className="bg-[#b08d55] hover:bg-[#967642] text-white uppercase tracking-widest text-xs font-bold px-8 py-2 h-auto rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none shadow-sm w-fit"
                                         >
-                                            <a href={item.file} download target="_blank" rel="noopener noreferrer">
+                                            <a href={item.file} target="_blank" rel="noopener noreferrer">
                                                 DOWNLOAD
                                             </a>
                                         </Button>
