@@ -108,7 +108,7 @@ export default function AboutPage() {
                                 viewport={{ once: true }}
                             >
                                 <motion.div variants={fadeInUp}>
-                                    <p className="text-4xl font-bold text-[#C5A25D]">15+</p>
+                                    <p className="text-4xl font-bold text-[#C5A25D]">25+</p>
                                     <p className="text-sm text-zinc-500 font-medium">Years Experience</p>
                                 </motion.div>
                                 <motion.div variants={fadeInUp}>
