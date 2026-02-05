@@ -18,7 +18,7 @@ const testimonials = [
     },
     {
         id: 3,
-        content: "As a contractor, I value reliability and quality. Luxe Tiles delivers both consistently. Their Marmo Luxe collection is a favorite among my clients.",
+        content: "As a contractor, I value reliability and quality. Edon Ceramics Tiles delivers both consistently. Their Marmo collection is a favorite among my clients.",
         author: "James Carter",
         role: "Architect",
         rating: 5,

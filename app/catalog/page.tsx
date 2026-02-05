@@ -12,32 +12,32 @@ const catalogSections = [
     {
         title: "600 x 1200 GVT",
         items: [
-            { name: "Endless Glossy (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
-            { name: "Matt Finish (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
-            { name: "Carving Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" }
+            { name: "Endless Glossy (600x1200)", fileId: "1KskC9E8uXfXmtZuoiuzsyOxYGtyIOj0r" },
+            { name: "Matt Finish (600x1200)", fileId: "1WnTNpI92NzvWEo5dV1S-34Zxo9loqCB3" },
+            { name: "Carving Series (600x1200)", fileId: "1APu0zG-OPiUR4OzxvDJfQTrDUZlOkG-w" }
         ]
     },
     {
         title: "600 x 1200",
         items: [
-            { name: "3D Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
-            { name: "Wood Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
-            { name: "Colorado Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
-            { name: "Double Charge (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
-            { name: "Gold Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" }
+            { name: "3D Series (600x1200)", fileId: "1VxHScTg-LEcjMDxyWYOsFZvgLtv5ZzjK" },
+            { name: "Wood Series (600x1200)", fileId: "1VW8nZvYdwbQYWIqbeCsNVl2qs_V5zGbK" },
+            { name: "Colorado Series (600x1200)", fileId: "1MT2fbAygn64_IJH_sdC5niQSYOO25VVK" },
+            { name: "Double Charge (600x1200)", fileId: "1cNcCH9Q3HYHmUBE4mDPd_vDIH1eaPB5z" },
+            { name: "Gold Series (600x1200)", fileId: "1iNrPemFEm-QmLyETZGqAQ38LJ6HKp0bn" }
         ]
     },
     {
         title: "2 x 2 Parking",
         items: [
-            { name: "2X2 Plain Series", fileId: "INSERT_FILE_ID_HERE" },
-            { name: "2X2 Punch Vol-1", fileId: "INSERT_FILE_ID_HERE" }
+            { name: "2X2 Plain Series", fileId: "1y2y9Lu3gphAcIkwORZK7nVhakfHOgbBE" },
+            { name: "2X2 Punch Vol-1", fileId: "17DI8-taHESTTXBx3CaKuhqIG9GXrU3br" }
         ]
     },
     {
         title: "Sanitary Wares",
         items: [
-            { name: "Sanitary Wares Collection", fileId: "INSERT_FILE_ID_HERE" }
+            { name: "Sanitary Wares Collection", fileId: "1ZkKzbFJ2e8k1cWj6DalOh8pVc4_clm3X" }
         ]
     },
 ];

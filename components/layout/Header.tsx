@@ -44,15 +44,15 @@ export function Header() {
                     : "bg-transparent py-2"
             )}
         >
-            <div className="container mx-auto flex items-center justify-between px-4 md:px-6">
+            <div className="container mx-auto flex items-center justify-between px-2 md:px-6">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="relative h-16 w-48">
+                    <div className="relative h-16 w-38">
                         <Image
                             src="/logo_v2.png"
                             alt="Edon Ceramics"
                             fill
-                            className="object-contain object-left"
+                            className="object-contai    n object-left"
                             priority
                         />
                     </div>
