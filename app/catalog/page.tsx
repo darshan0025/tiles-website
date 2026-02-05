@@ -2,42 +2,37 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Button } from "@/components/ui/button";
 import { FileText } from "lucide-react";
 
-// Helper for Google Drive direct download links
-const getDirectDriveLink = (fileId: string) => {
-    return `https://drive.google.com/uc?export=download&id=${fileId}`;
-};
-
-// Normalized data structure: Items now use 'fileId' for direct downloads
+// Normalized data structure: All items are objects with direct GitHub Release URLs
 const catalogSections = [
     {
         title: "600 x 1200 GVT",
         items: [
-            { name: "Endless Glossy (600x1200)", fileId: "1KskC9E8uXfXmtZuoiuzsyOxYGtyIOj0r" },
-            { name: "Matt Finish (600x1200)", fileId: "1WnTNpI92NzvWEo5dV1S-34Zxo9loqCB3" },
-            { name: "Carving Series (600x1200)", fileId: "1APu0zG-OPiUR4OzxvDJfQTrDUZlOkG-w" }
+            { name: "Endless Glossy (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/Endless.Glossy.-.600.x.1200.mm.WO.Logo.pdf" },
+            { name: "Matt Finish (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/Matt.600X1200mm.WO.Logo.pdf" },
+            { name: "Carving Series (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/Carving.-.600.x1200MM.WO.Logo.pdf" }
         ]
     },
     {
         title: "600 x 1200",
         items: [
-            { name: "3D Series (600x1200)", fileId: "1VxHScTg-LEcjMDxyWYOsFZvgLtv5ZzjK" },
-            { name: "Wood Series (600x1200)", fileId: "1VW8nZvYdwbQYWIqbeCsNVl2qs_V5zGbK" },
-            { name: "Colorado Series (600x1200)", fileId: "1MT2fbAygn64_IJH_sdC5niQSYOO25VVK" },
-            { name: "Double Charge (600x1200)", fileId: "1cNcCH9Q3HYHmUBE4mDPd_vDIH1eaPB5z" },
-            { name: "Gold Series (600x1200)", fileId: "1iNrPemFEm-QmLyETZGqAQ38LJ6HKp0bn" }
+            { name: "3D Series (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/3D.600x1200mm.WO.Logo.pdf" },
+            { name: "Wood Series (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/Wood.Series.-.600x1200mm.WO.Logo.pdf" },
+            { name: "Colorado Series (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/Colorado.600x1200mm.WO.Logo.pdf" },
+            { name: "Double Charge (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/Double.Charge_600x1200mm.WO.Logo.pdf" },
+            { name: "Gold Series (600x1200)", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/GOLD.2x4.pdf" }
         ]
     },
     {
         title: "2 x 2 Parking",
         items: [
-            { name: "2X2 Plain Series", fileId: "1y2y9Lu3gphAcIkwORZK7nVhakfHOgbBE" },
-            { name: "2X2 Punch Vol-1", fileId: "17DI8-taHESTTXBx3CaKuhqIG9GXrU3br" }
+            { name: "2X2 Plain Series", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/2X2.PLAIN_SERIES.pdf" },
+            { name: "2X2 Punch Vol-1", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/2X2.PUNCH.VOL-1.pdf" }
         ]
     },
     {
         title: "Sanitary Wares",
         items: [
-            { name: "Sanitary Wares Collection", fileId: "1ZkKzbFJ2e8k1cWj6DalOh8pVc4_clm3X" }
+            { name: "Sanitary Wares Collection", file: "https://github.com/darshan0025/tiles-website/releases/download/v1.0/Sanitary.Wares.pdf" }
         ]
     },
 ];
@@ -84,11 +79,7 @@ export default function CatalogPage() {
                                             asChild
                                             className="bg-[#b08d55] hover:bg-[#967642] text-white uppercase tracking-widest text-xs font-bold px-8 py-2 h-auto rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none shadow-sm w-fit"
                                         >
-                                            <a
-                                                href={item.fileId === "INSERT_FILE_ID_HERE" ? "#" : getDirectDriveLink(item.fileId)}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
+                                            <a href={item.file} target="_blank" rel="noopener noreferrer">
                                                 DOWNLOAD
                                             </a>
                                         </Button>
