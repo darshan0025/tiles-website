@@ -2,37 +2,42 @@ import { PageHero } from "@/components/layout/PageHero";
 import { Button } from "@/components/ui/button";
 import { FileText } from "lucide-react";
 
-// Normalized data structure: All items are objects
+// Helper for Google Drive direct download links
+const getDirectDriveLink = (fileId: string) => {
+    return `https://drive.google.com/uc?export=download&id=${fileId}`;
+};
+
+// Normalized data structure: Items now use 'fileId' for direct downloads
 const catalogSections = [
     {
         title: "600 x 1200 GVT",
         items: [
-            { name: "Endless Glossy (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
-            { name: "Matt Finish (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
-            { name: "Carving Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
+            { name: "Endless Glossy (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
+            { name: "Matt Finish (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
+            { name: "Carving Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" }
         ]
     },
     {
         title: "600 x 1200",
         items: [
-            { name: "3D Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
-            { name: "Wood Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
-            { name: "Colorado Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
-            { name: "Double Charge (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
-            { name: "Gold Series (600x1200)", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
+            { name: "3D Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
+            { name: "Wood Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
+            { name: "Colorado Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
+            { name: "Double Charge (600x1200)", fileId: "INSERT_FILE_ID_HERE" },
+            { name: "Gold Series (600x1200)", fileId: "INSERT_FILE_ID_HERE" }
         ]
     },
     {
         title: "2 x 2 Parking",
         items: [
-            { name: "2X2 Plain Series", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" },
-            { name: "2X2 Punch Vol-1", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
+            { name: "2X2 Plain Series", fileId: "INSERT_FILE_ID_HERE" },
+            { name: "2X2 Punch Vol-1", fileId: "INSERT_FILE_ID_HERE" }
         ]
     },
     {
         title: "Sanitary Wares",
         items: [
-            { name: "Sanitary Wares Collection", file: "https://drive.google.com/drive/folders/1fxesQbhKCpZcv6HG-zmjDQt4cE-E9oqh?usp=drive_link" }
+            { name: "Sanitary Wares Collection", fileId: "INSERT_FILE_ID_HERE" }
         ]
     },
 ];
@@ -79,7 +84,11 @@ export default function CatalogPage() {
                                             asChild
                                             className="bg-[#b08d55] hover:bg-[#967642] text-white uppercase tracking-widest text-xs font-bold px-8 py-2 h-auto rounded-tl-xl rounded-br-xl rounded-tr-none rounded-bl-none shadow-sm w-fit"
                                         >
-                                            <a href={item.file} target="_blank" rel="noopener noreferrer">
+                                            <a
+                                                href={item.fileId === "INSERT_FILE_ID_HERE" ? "#" : getDirectDriveLink(item.fileId)}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                            >
                                                 DOWNLOAD
                                             </a>
                                         </Button>
