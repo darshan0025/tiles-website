@@ -111,14 +111,7 @@ export default function AboutPage() {
                                     <p className="text-4xl font-bold text-[#C5A25D]">25+</p>
                                     <p className="text-sm text-zinc-500 font-medium">Years Experience</p>
                                 </motion.div>
-                                <motion.div variants={fadeInUp}>
-                                    <p className="text-4xl font-bold text-[#C5A25D]">30+</p>
-                                    <p className="text-sm text-zinc-500 font-medium">Countries Exported</p>
-                                </motion.div>
-                                <motion.div variants={fadeInUp}>
-                                    <p className="text-4xl font-bold text-[#C5A25D]">20k</p>
-                                    <p className="text-sm text-zinc-500 font-medium">Daily Production (sqm)</p>
-                                </motion.div>
+
                             </motion.div>
                         </motion.div>
 

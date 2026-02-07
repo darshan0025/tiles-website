@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 interface PageHeroProps {
     title: string;
@@ -10,11 +11,16 @@ export function PageHero({ title, backgroundImage, className }: PageHeroProps) {
     return (
         <section className={cn("relative h-[60vh] min-h-[400px] w-full flex items-center justify-center overflow-hidden bg-zinc-900", className)}>
             {/* Background Image */}
-            <div
-                className="absolute inset-0 z-0 opacity-60 bg-cover bg-center bg-no-repeat transition-transform duration-1000 ease-out hover:scale-105"
-                style={{ backgroundImage: `url('${backgroundImage}')` }}
-                aria-hidden="true"
-            />
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src={backgroundImage}
+                    alt={title}
+                    fill
+                    className="object-cover opacity-60 transition-transform duration-1000 ease-out hover:scale-105"
+                    priority
+                    quality={90}
+                />
+            </div>
 
             {/* Dark Overlay for Text Readability */}
             <div className="absolute inset-0 bg-black/50 z-0" />

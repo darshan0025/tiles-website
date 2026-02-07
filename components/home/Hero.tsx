@@ -5,14 +5,22 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
+import Image from "next/image";
+
 export function Hero() {
     return (
         <section className="relative h-[85vh] min-h-[600px] w-full flex items-center justify-center overflow-hidden bg-zinc-900">
             {/* Background Image with Gradient Overlay */}
-            <div
-                className="absolute inset-0 z-0 opacity-70 bg-[url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2666&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat"
-                aria-hidden="true"
-            />
+            <div className="absolute inset-0 z-0">
+                <Image
+                    src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2666&auto=format&fit=crop"
+                    alt="Luxury Interior"
+                    fill
+                    className="object-cover opacity-70"
+                    priority
+                    quality={90}
+                />
+            </div>
             <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-0" />
 
             <div className="relative z-10 container px-4 md:px-6 text-center text-white">
