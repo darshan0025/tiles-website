@@ -19,8 +19,7 @@ export const metadata: Metadata = {
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-
-// ... existing imports
+import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 
 export default function RootLayout({
   children,
@@ -32,11 +31,13 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} ${inter.variable} antialiased font-sans flex flex-col min-h-screen`}
       >
-        <Header />
-        <main className="flex-1">
-          {children}
-        </main>
-        <Footer />
+        <SmoothScrollProvider>
+          <Header />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </SmoothScrollProvider>
       </body>
     </html>
   );
